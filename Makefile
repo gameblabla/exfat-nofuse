@@ -13,7 +13,7 @@ exfat-objs := exfat_core.o exfat_super.o exfat_api.o exfat_blkdev.o exfat_cache.
 else
 # external module build
 
-EXTRA_FLAGS += -I$(PWD)
+EXTRA_FLAGS += -I$(PWD) -O3
 
 #
 # KDIR is a path to a directory containing kernel source.
